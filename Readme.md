@@ -10,7 +10,7 @@ A React Native mobile client for tracking job applications. Built with Expo and 
 
 Both apps share the same data layer:
 
-Architecture
+![Architecture](./assets/job_tracker_architecture.svg)
 
 The Next.js app functions as both the web UI and the API server. The mobile app talks to it directly — **you must have the web app running before starting the mobile app.**
 
