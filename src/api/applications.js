@@ -13,7 +13,7 @@ export const fetchStats = async () => {
     throw new Error("SET API");
   }
 
-  const res = await axios.get(`${API_BASE_URL}/stat`);
+  const res = await axios.get(`${API_BASE_URL}/api/stat`);
   return res.data;
 };
 
@@ -29,7 +29,7 @@ export const fetchList = async () => {
     throw new Error("SET API");
   }
 
-  const res = await axios.get(`${API_BASE_URL}/items`);
+  const res = await axios.get(`${API_BASE_URL}/api/items`);
   return res.data;
 };
 
@@ -41,7 +41,7 @@ export async function addList(body) {
   if (!API_BASE_URL) {
     throw new Error("SET API");
   }
-  const { data } = await axios.post(`${API_BASE_URL}/items`, body);
+  const { data } = await axios.post(`${API_BASE_URL}/api/items`, body);
   return data;
 }
 
@@ -50,6 +50,6 @@ export async function addList(body) {
 
 export async function deleteList(id) {
 
-  await axios.delete(`${API_BASE_URL}/items`, { data: { id } });
+  await axios.delete(`${API_BASE_URL}/api/items`, { data: { id } });
   
 }
