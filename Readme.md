@@ -12,7 +12,7 @@ Both apps share the same data layer:
 
 ![Architecture](./assets/job_tracker_architecture.svg)
 
-The Next.js app functions as both the web UI and the API server. The mobile app talks to it directly — **you must have the web app running before starting the mobile app.**
+The Next.js app functions as the API server. The mobile app talks to it directly — **you must have the web app running before starting the mobile app.**
 
 ---
 
@@ -20,7 +20,7 @@ The Next.js app functions as both the web UI and the API server. The mobile app 
 
 - [Node.js](https://nodejs.org/) 18+
 - [Expo Go](https://expo.dev/go) installed on your phone, or an Android/iOS emulator /
-- The Task 1 **web app running** at `http://localhost:3000`
+- The Task 1 **web app running** e.g `http://localhost:3000`
 
 ---
 
